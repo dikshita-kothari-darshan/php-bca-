@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        table {
+            width: 100%;
+            max-width: 1000px;
+            border-collapse: collapse;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                border: 0;
+            }
+            th, td {
+                display: block;
+                width: 100%;
+                text-align: left;
+                padding: 5px;
+            }
+            th {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Time Slot</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <td rowspan="2">07:45 AM to 08:40 AM<br>08:40 AM to 09:35 AM</td>
+            <td>2401CS491-WT-II (Lecture) {AVB} [AUD-6]</td>
+            <td>2401CS491-WT-II (Lecture) {AVB} [AUD-6]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>09:35 AM to 09:50 AM</td>
+            <td colspan="2">Break</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">09:50 AM to 10:40 AM</td>
+            <td>2301CS404-PP (Lecture) {SRM} [AUD-4]</td>
+            <td>2401CS491 - WT-II (Lecture) {AVB} [AUD-6]</td>
+            <td>2301CS405 - SE (Lecture) {RBG} [AUD-4]</td>
+            <td>2301CS412- ASP.NET Core (Lecture) {NRV} [AUD-4]</td>
+            <td>2301CS413-MADF (Lecture) {MDB} [AUD-5]</td>
+            <td>2301CS411-ANG (Lecture) {AVB} [AUD-6]</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">10:40 AM to 11:30 AM</td>
+            <td>2301CS405 - SE (Lecture) {RBG} [AUD-4]</td>
+            <td>2301CS404 - PP (Lecture) {SRM} [AUD-4]</td>
+            <td>Break</td>
+            <td>Batch-4 2401CS491-WT-II (Lab (TA)) {AVB, TEJAS} [H-202]</td>
+            <td>Batch-4 2301HS403 - PC-I (Lab) {RJB} [C-301]</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">11:30 AM to 12:10 PM</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Batch-1 2301HS402- Probability & Statistics (Lab (TA)) {PJB} [G-101]</td>
+             <td>Batch-5 2301CS411 - ANG (Lab (TA)) JAY, MEHUL} [C-304-1]</td>
+            <td>Batch-5 2301CS411 - ANG (Lab (TA)) {AVB, JAY, MEHUL [C-304-1]</td>
+            <td></td>
+        </tr>
+         <tr>
+            <td></td>
+            <td></td>
+            <td>Batch-2 2301HS402- Probability & Statistics (Lab (TA)) {PJB} [G-101]</td>
+             <td>Batch-6 2301CS411-ANG (Lab (TA)) {AVB, SACHIN} [C-304-II]</td>
+             <td>Batch-6 2301CS411 - ANG (Lab (TA)) {AVB, SACHIN} [C-304-II]</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan="2">12:10 PM to 01:00 PM</td>
+            <td>Batch-1 2401CS491-WT-II (Lab (TA)) {AVB, JENISH, JENISH [H-202]</td>
+            <td>Batch-1 2401CS491-WT-II (Lab (TA)) {AVB, JENISH, JENISH [H-202]</td>
+            <td>Batch-3 2301HS402 - Probability & Statistics (Tutorial) {PBV} [G-103]</td>
+            <td>Break</td>
+            <td>Break</td>
+            <td>Batch-2 2301HS403 - PC-I (Lab) {TDR} [C-312]</td>
+        </tr>
+        <tr>
+            <td>Batch-2 2401CS491-WT-II (Lab (TA)) {AVB, TEJAS} [H-202]</td>
+            <td>Batch-3 2401CS491 - WT-II (Lab (TA)) {AVB, JENISH, JENISH) [H-202]</td>
+            <td>Batch-4 2301HS402 - Probability & Statistics (Tutorial) {PJB} [G-104]</td>
+             <td>Batch-1 2301CS413 - MADF (Lab (TA)) {MDB, DUSHYANT} [H-403]</td>
+             <td>Batch-1 2301HS403 - PC-I (Lab) {RRU} [C-312]</td>
+            <td>Batch-3 2301HS403 - PC-I (Lab) {RJB} [C-301]</td>
+        </tr>
+        <tr>
+            <td rowspan="2">01:00 PM to 01:50 PM</td>
+            <td>Batch-3 2401CS491 - WT-II (Lab (TA)) {AVB, JENISH, JENISH [H-202]</td>
+            <td>Batch-2 2401CS491-WT-II (Lab (TA)) {AVB, TEJAS} [H-202]</td>
+            <td>Batch-5 2301CS404 - PP (Lab (TA)) {SRM, GOPI, AYUSH [H-403]</td>
+            <td>Batch-2 2301CS404 - PP (Lab (TA)) {SRM, RUTUL, HENSI} [H-203]</td>
+            <td>Batch-2 2301CS405 - SE (Lab (TA)) {RBG, HIMANSHU} [H-203]</td>
+            <td>Batch-4 2301HS402- Probability & Statistics (Lecture) {PJB) [G-103]</td>
+        </tr>
+        <tr>
+            <td>Batch-6 2401CS491 - WT-II (Lab (TA)) {AVB, TEJAS} [H-202]</td>
+            <td>Batch-3 2301CS405 - SE (Lab (TA)) {RBG, ANJANI} [H-403]</td>
+            <td>Batch-6 2301CS404 - PP (Lab (TA)) {SRM, MEET} [H-403]</td>
+            <td>Batch-3 2301CS404 - PP (Lab (TA)) {SRM, AKSHAT} [H-203]</td>
+            <td>Batch-3 2301CS405 - SE (Lab (TA)) {RBG, ANJANI} [H-403]</td>
+            <td>Batch-5 2301HS402- Probability & Statistics (Lecture) {PJB} [G-103]</td>
+        </tr>
+    </table>
+</body>
+</html>
