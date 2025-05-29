@@ -1,0 +1,14 @@
+{
+  "name": "PHP with MySQL",
+  "image": "mcr.microsoft.com/devcontainers/php:8.2",
+  "features": {
+    "mysql": "latest"
+  },
+  "forwardPorts": [80, 3306],
+  "postCreateCommand": "sudo service mysql start",
+  "customizations": {
+    "vscode": {
+      "extensions": ["bmewburn.vscode-intelephense-client"]
+    }
+  }
+}
